@@ -673,6 +673,15 @@ namespace ShareX.HelpersLib.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Could not create directory, check your path settings..
+        /// </summary>
+        internal static string Helpers_CreateDirectoryIfNotExist_Create_failed_ {
+            get {
+                return ResourceManager.GetString("Helpers_CreateDirectoryIfNotExist_Create_failed_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Download failed:.
         /// </summary>
         internal static string Helpers_DownloadString_Download_failed_ {

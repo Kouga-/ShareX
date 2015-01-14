@@ -1,4 +1,4 @@
-<root>
+﻿<root>
   <!-- 
     Microsoft ResX Schema 
     
@@ -122,7 +122,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="scMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>160, 0</value>
   </data>
   <data name="lblMainFormTip.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -137,7 +137,7 @@
     <value>10, 0, 10, 0</value>
   </data>
   <data name="lblMainFormTip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 343</value>
+    <value>320, 344</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblMainFormTip.TabIndex" type="System.Int32, mscorlib">
@@ -154,6 +154,30 @@
   </data>
   <data name="&gt;&gt;lblMainFormTip.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="lblSplitter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="lblSplitter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblSplitter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1, 407</value>
+  </data>
+  <data name="lblSplitter.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblSplitter.Name" xml:space="preserve">
+    <value>lblSplitter</value>
+  </data>
+  <data name="&gt;&gt;lblSplitter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSplitter.Parent" xml:space="preserve">
+    <value>scMain.Panel1</value>
+  </data>
+  <data name="&gt;&gt;lblSplitter.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="chFilename.Text" xml:space="preserve">
     <value>Filename</value>
@@ -201,7 +225,7 @@
     <value>0, 0</value>
   </data>
   <data name="lvUploads.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 406</value>
+    <value>335, 407</value>
   </data>
   <data name="lvUploads.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -216,7 +240,7 @@
     <value>scMain.Panel1</value>
   </data>
   <data name="&gt;&gt;lvUploads.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;scMain.Panel1.Name" xml:space="preserve">
     <value>scMain.Panel1</value>
@@ -237,7 +261,7 @@
     <value>0, 0</value>
   </data>
   <data name="pbPreview.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 406</value>
+    <value>333, 407</value>
   </data>
   <data name="pbPreview.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -267,7 +291,7 @@
     <value>1</value>
   </data>
   <data name="scMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>660, 406</value>
+    <value>674, 407</value>
   </data>
   <data name="scMain.SplitterDistance" type="System.Int32, mscorlib">
     <value>335</value>
@@ -285,10 +309,10 @@
     <value>ShareX.HelpersLib.SplitContainerCustomSplitter, ShareX.HelpersLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;scMain.Parent" xml:space="preserve">
-    <value>scMenu.Panel2</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;scMain.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <metadata name="tsMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -297,7 +321,7 @@
     <value>False</value>
   </data>
   <data name="tsMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+    <value>Left</value>
   </data>
   <data name="tsmiFullscreen.Size" type="System.Drawing.Size, System.Drawing">
     <value>217, 22</value>
@@ -408,7 +432,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsddbCapture.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsddbCapture.Text" xml:space="preserve">
     <value>Capture</value>
@@ -450,7 +474,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsddbUpload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsddbUpload.Text" xml:space="preserve">
     <value>Upload</value>
@@ -462,7 +486,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsddbWorkflows.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsddbWorkflows.Text" xml:space="preserve">
     <value>Workflows</value>
@@ -540,13 +564,13 @@
     <value>Magenta</value>
   </data>
   <data name="tsddbTools.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsddbTools.Text" xml:space="preserve">
     <value>Tools</value>
   </data>
   <data name="tssMain1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 6</value>
+    <value>147, 6</value>
   </data>
   <data name="tsddbAfterCaptureTasks.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -555,7 +579,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsddbAfterCaptureTasks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsddbAfterCaptureTasks.Text" xml:space="preserve">
     <value>After capture tasks</value>
@@ -567,7 +591,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsddbAfterUploadTasks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsddbAfterUploadTasks.Text" xml:space="preserve">
     <value>After upload tasks</value>
@@ -618,7 +642,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsddbDestinations.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsddbDestinations.Text" xml:space="preserve">
     <value>Destinations</value>
@@ -630,7 +654,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsbApplicationSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsbApplicationSettings.Text" xml:space="preserve">
     <value>Application settings...</value>
@@ -642,7 +666,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsbTaskSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsbTaskSettings.Text" xml:space="preserve">
     <value>Task settings...</value>
@@ -654,13 +678,13 @@
     <value>Magenta</value>
   </data>
   <data name="tsbHotkeySettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsbHotkeySettings.Text" xml:space="preserve">
     <value>Hotkey settings...</value>
   </data>
   <data name="tssMain2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 6</value>
+    <value>147, 6</value>
   </data>
   <data name="tsbScreenshotsFolder.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -669,7 +693,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsbScreenshotsFolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsbScreenshotsFolder.Text" xml:space="preserve">
     <value>Screenshots folder...</value>
@@ -681,7 +705,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsbHistory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsbHistory.Text" xml:space="preserve">
     <value>History...</value>
@@ -693,7 +717,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsbImageHistory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsbImageHistory.Text" xml:space="preserve">
     <value>Image history...</value>
@@ -741,7 +765,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsddbDebug.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsddbDebug.Text" xml:space="preserve">
     <value>Debug</value>
@@ -753,7 +777,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsmiDonate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsmiDonate.Text" xml:space="preserve">
     <value>Donate...</value>
@@ -765,7 +789,7 @@
     <value>Magenta</value>
   </data>
   <data name="tsmiAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
+    <value>147, 20</value>
   </data>
   <data name="tsmiAbout.Text" xml:space="preserve">
     <value>About...</value>
@@ -777,7 +801,7 @@
     <value>6, 6, 6, 6</value>
   </data>
   <data name="tsMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 406</value>
+    <value>160, 407</value>
   </data>
   <data name="tsMain.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -789,10 +813,10 @@
     <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tsMain.Parent" xml:space="preserve">
-    <value>scMenu.Panel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;tsMain.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <metadata name="cmsTaskInfo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>286, 17</value>
@@ -1454,57 +1478,6 @@
   <data name="niTray.Text" xml:space="preserve">
     <value>ShareX</value>
   <comment>@Invariant</comment></data>
-  <data name="scMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="scMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;scMenu.Panel1.Name" xml:space="preserve">
-    <value>scMenu.Panel1</value>
-  </data>
-  <data name="&gt;&gt;scMenu.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;scMenu.Panel1.Parent" xml:space="preserve">
-    <value>scMenu</value>
-  </data>
-  <data name="&gt;&gt;scMenu.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;scMenu.Panel2.Name" xml:space="preserve">
-    <value>scMenu.Panel2</value>
-  </data>
-  <data name="&gt;&gt;scMenu.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;scMenu.Panel2.Parent" xml:space="preserve">
-    <value>scMenu</value>
-  </data>
-  <data name="&gt;&gt;scMenu.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="scMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>834, 406</value>
-  </data>
-  <data name="scMenu.SplitterDistance" type="System.Int32, mscorlib">
-    <value>170</value>
-  </data>
-  <data name="scMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;scMenu.Name" xml:space="preserve">
-    <value>scMenu</value>
-  </data>
-  <data name="&gt;&gt;scMenu.Type" xml:space="preserve">
-    <value>ShareX.HelpersLib.SplitContainerCustomSplitter, ShareX.HelpersLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;scMenu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;scMenu.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1515,7 +1488,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>834, 406</value>
+    <value>834, 407</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 250</value>
@@ -2622,6 +2595,6 @@
     <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>ShareX.HotkeyForm, ShareX, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ShareX.HotkeyForm, ShareX, Version=9.5.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

@@ -43,7 +43,7 @@ namespace ShareX
     {
         public bool IsReady { get; private set; }
 
-        private bool forceClose;
+        private bool forceClose, firstUpdateCheck = true;
         private UploadInfoManager uim;
         private ToolStripDropDownItem tsmiImageFileUploaders, tsmiTrayImageFileUploaders, tsmiTextFileUploaders, tsmiTrayTextFileUploaders;
         private System.Threading.Timer updateTimer;
@@ -547,11 +547,6 @@ namespace ShareX
 
             AfterSettingsJobs();
 
-            if (Program.Settings.MenuSplitterDistance > 0)
-            {
-                scMenu.SplitterDistance = Program.Settings.MenuSplitterDistance;
-            }
-
             if (Program.Settings.PreviewSplitterDistance > 0)
             {
                 scMain.SplitterDistance = Program.Settings.PreviewSplitterDistance;
@@ -577,8 +572,9 @@ namespace ShareX
 
         private void AfterSettingsJobs()
         {
-            ProxyInfo.Current = Program.Settings.ProxySettings;
-            ClipboardHelpers.UseAlternativeCopyImage = Program.Settings.UseAlternativeClipboardCopyImage;
+            HelpersOptions.CurrentProxy = Program.Settings.ProxySettings;
+            HelpersOptions.UseAlternativeCopyImage = Program.Settings.UseAlternativeClipboardCopyImage;
+            HelpersOptions.BrowserPath = Program.Settings.BrowserPath;
         }
 
         public void UpdateMainFormSettings()
@@ -667,7 +663,8 @@ namespace ShareX
             if (!UpdateMessageBox.IsOpen)
             {
                 UpdateChecker updateChecker = TaskHelpers.CheckUpdate();
-                UpdateMessageBox.Start(updateChecker);
+                UpdateMessageBox.Start(updateChecker, firstUpdateCheck);
+                firstUpdateCheck = false;
             }
         }
 
@@ -770,7 +767,7 @@ namespace ShareX
                 tsmiHideMenu.Text = Resources.MainForm_UpdateMenu_Show_menu;
             }
 
-            scMenu.Panel1Collapsed = !Program.Settings.ShowMenu;
+            tsMain.Visible = lblSplitter.Visible = Program.Settings.ShowMenu;
             Refresh();
         }
 
@@ -1103,11 +1100,6 @@ namespace ShareX
             {
                 uim.TryOpen();
             }
-        }
-
-        private void scMenu_SplitterMoved(object sender, SplitterEventArgs e)
-        {
-            Program.Settings.MenuSplitterDistance = scMenu.SplitterDistance;
         }
 
         private void scMain_SplitterMoved(object sender, SplitterEventArgs e)

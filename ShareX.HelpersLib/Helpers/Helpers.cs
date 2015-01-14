@@ -42,8 +42,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
-using System.Windows.Forms;
 using System.Web;
+using System.Windows.Forms;
 
 namespace ShareX.HelpersLib
 {
@@ -661,7 +661,15 @@ namespace ShareX.HelpersLib
 
                 if (!string.IsNullOrEmpty(path) && !Directory.Exists(path))
                 {
-                    Directory.CreateDirectory(path);
+                    try
+                    {
+                        Directory.CreateDirectory(path);
+                    }
+                    catch (Exception e)
+                    {
+                        DebugHelper.WriteException(e);
+                        MessageBox.Show(Resources.Helpers_CreateDirectoryIfNotExist_Create_failed_ + "\r\n\r\n" + e, "ShareX", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }
@@ -793,7 +801,7 @@ namespace ShareX.HelpersLib
                     using (WebClient wc = new WebClient())
                     {
                         wc.Encoding = Encoding.UTF8;
-                        wc.Proxy = ProxyInfo.Current.GetWebProxy();
+                        wc.Proxy = HelpersOptions.CurrentProxy.GetWebProxy();
                         return wc.DownloadString(url);
                     }
                 }

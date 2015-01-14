@@ -909,15 +909,8 @@ namespace ShareX.UploadersLib
                 {
                     Config.HubicOAuth2Info = oauth;
                     Config.HubicOpenstackAuthInfo = osauth;
+                    URLHelpers.OpenURL(url);
                     DebugHelper.WriteLine("HubicAuthOpen - Authorization URL is opened: " + url);
-
-                    using (OAuthWebForm oauthForm = new OAuthWebForm(url, "https://getsharex.com/callback/"))
-                    {
-                        if (oauthForm.ShowDialog() == DialogResult.OK)
-                        {
-                            HubicAuthComplete(oauthForm.Code);
-                        }
-                    }
                 }
                 else
                 {
@@ -940,12 +933,12 @@ namespace ShareX.UploadersLib
 
                     if (result)
                     {
-                        oAuth2Hubic.Status = OAuthLoginStatus.LoginSuccessful;
+                        oauth2Hubic.Status = OAuthLoginStatus.LoginSuccessful;
                         MessageBox.Show(Resources.UploadersConfigForm_Login_successful, "ShareX", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        oAuth2Hubic.Status = OAuthLoginStatus.LoginFailed;
+                        oauth2Hubic.Status = OAuthLoginStatus.LoginFailed;
                         MessageBox.Show(Resources.UploadersConfigForm_Login_failed, "ShareX", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
@@ -969,12 +962,12 @@ namespace ShareX.UploadersLib
 
                     if (result)
                     {
-                        oAuth2Hubic.Status = OAuthLoginStatus.LoginSuccessful;
+                        oauth2Hubic.Status = OAuthLoginStatus.LoginSuccessful;
                         MessageBox.Show(Resources.UploadersConfigForm_Login_successful, "ShareX", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        oAuth2Hubic.Status = OAuthLoginStatus.LoginFailed;
+                        oauth2Hubic.Status = OAuthLoginStatus.LoginFailed;
                         MessageBox.Show(Resources.UploadersConfigForm_Login_failed, "ShareX", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
